@@ -1,26 +1,447 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Desarrollador de Software: Ivan Rodriguez Romero - Portafolio">
-  <meta name="author" content="Ivan Rodriguez Romero">
-  <meta name="keywords" content="Ivan,Ivan Rodriguez, Ivan Rodriguez Romero, Desarrollador, Programador, Software, Portafolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ivan Alexander Rodriguez Romero — Senior Backend & AI/Agentic Engineer. Java, Python, MCP, RAG, LLM, Azure. Experiencia en BCP, Interbank, DINET.">
+  <meta name="author" content="Ivan Alexander Rodriguez Romero">
+  <meta name="keywords" content="Ivan Rodriguez, Senior Backend Developer, AI Engineer, Agentic, MCP, RAG, LLM, Python, Java, Azure, Interbank, BCP, DINET">
+  <meta property="og:title" content="Ivan Rodriguez — Senior Backend & AI/Agentic Engineer">
+  <meta property="og:description" content="Java · Python · MCP · RAG · LLM · Azure | Ex-INDRA (Interbank), NTT DATA (BCP)">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>Ivan Rodriguez Romero</title>
+  <title>Ivan Rodriguez — Senior Backend & AI/Agentic Engineer</title>
 </head>
 <body>
-  <div class="container">
-    <div class="languages">
-      <span id="en" class="en">English</span>
-      <input id="elegir" type="checkbox" class="check"/>
-      <label id="idFondoElegir" for="elegir" class="fondoElegir"></label>
-      <label id="idCirculoElegir" for="elegir" class="circuloElegir"></label>
-      <span id="es" class="es">Spanish</span>
 
-    </div>  
-  </div>
+  <!-- TOP NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">IR<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav.about">Sobre mí</a>
+        <a href="#projects" data-i18n="nav.projects">Proyectos AI</a>
+        <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </div>
+      <div class="lang-toggle" id="langToggle" role="button" aria-label="Toggle language" tabindex="0">
+        <span class="lang-opt active" data-lang-opt="es">ES</span>
+        <span class="lang-opt" data-lang-opt="en">EN</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Disponible para proyectos</p>
+      <h1 class="hero-name">Ivan Alexander Rodriguez Romero</h1>
+      <h2 class="hero-title" data-i18n="hero.title">
+        Senior Backend &amp; AI/Agentic Engineer
+      </h2>
+      <p class="hero-sub" data-i18n="hero.sub">
+        Intelligent Systems · Cloud &amp; Scalable Architectures
+      </p>
+      <div class="hero-tags">
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">LLM</span>
+        <span class="tag">MCP</span>
+        <span class="tag">RAG</span>
+        <span class="tag">Agentic AI</span>
+        <span class="tag">Azure</span>
+        <span class="tag">Microservices</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Contáctame</a>
+        <a href="https://github.com/ivanrodriguezromero1" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="https://www.linkedin.com/in/ivan-rodriguez2022/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="num">01</span> <span data-i18n="about.title">Sobre mí</span></h2>
+        <p class="about-text" data-i18n="about.p1">
+          Soy <strong>Senior Backend Developer &amp; AI/Agentic Engineer</strong>, especializado en Java y Python, con foco en arquitectura de microservicios reactivos y construcción de plataformas agenticas con LLMs (MCP, RAG, Skills, Tool-Calling). Bachiller egresado de la <strong>UNI</strong>.
+        </p>
+        <p class="about-text" data-i18n="about.p2">
+          Amplia experiencia en banca y enterprise en proyectos clave para <strong>BCP</strong>, <strong>INTERBANK</strong>, <strong>Caja Cencosud</strong> y <strong>DINET</strong>, a través de NTT DATA, INDRA, Zoluxiones y CSTI Corp. Programo desde 2015 y aplico metodologías ágiles desde 2020.
+        </p>
+        <p class="about-text" data-i18n="about.p3">
+          Sólida experiencia en <strong>Microsoft Azure</strong> (AKS, DevOps, Event Hub, API Management, Redis, PostgreSQL) en proyectos productivos del sector financiero y logístico. Practicante diario de <strong>Agentic Coding</strong> con Claude Code, Claude Agent SDK, MCP SDK y GitHub Copilot, desarrollando asistentes IA con arquitectura hexagonal, RAG basado en embeddings y orquestación de tools.
+        </p>
+        <div class="stats">
+          <div class="stat"><span class="stat-num">8+</span><span class="stat-label" data-i18n="about.stat1">años de experiencia</span></div>
+          <div class="stat"><span class="stat-num">12+</span><span class="stat-label" data-i18n="about.stat2">empresas / clientes</span></div>
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label" data-i18n="about.stat3">bancos top como cliente</span></div>
+          <div class="stat"><span class="stat-num">2026</span><span class="stat-label" data-i18n="about.stat4">AI-First &amp; Agentic</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS AI -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="num">02</span> <span data-i18n="projects.title">Proyectos destacados de AI / Agentic Engineering</span></h2>
+
+        <article class="card project-card highlight">
+          <header class="card-head">
+            <h3>Volt Sherpa AI <span class="badge">v3.0.0</span></h3>
+            <span class="card-date">Nov 2025 — <span data-i18n="projects.actualidad">Actualidad</span></span>
+          </header>
+          <p data-i18n="projects.volt.desc">
+            Plataforma propia de AI Agent end-to-end para cálculo eléctrico, reportes y consulta de conocimiento del dominio energético (VAD, PIDE, SEIN).
+          </p>
+          <ul class="bullets">
+            <li data-i18n="projects.volt.b1"><strong>MCP Server propio</strong> que expone Tools reales: PowerFactory (DIgSILENT), Excel, Word, KB VAD (SQLite).</li>
+            <li data-i18n="projects.volt.b2"><strong>RAG</strong> implementado como memoria extendida del LLM, con catálogo de tools indexado mediante embeddings.</li>
+            <li data-i18n="projects.volt.b3">Integración con <strong>Anthropic Claude Agent SDK</strong>, <strong>Claude Code SDK</strong>, <strong>Anthropic SDK</strong> y <strong>MCP SDK</strong> oficiales.</li>
+            <li data-i18n="projects.volt.b4"><strong>Arquitectura Hexagonal</strong> + patrones (Strategy, Circuit Breaker, Adapter, Factory, State, Observer).</li>
+            <li data-i18n="projects.volt.b5">Diseño <strong>model-agnostic</strong>: funciona con cualquier LLM (incluido Haiku sin reasoning extendido).</li>
+            <li data-i18n="projects.volt.b6"><strong>Observabilidad</strong>: Grafana + Loki, endpoints REST, heartbeat &amp; shutdown deterministas.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">TypeScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Python</span>
+            <span class="chip">C# / Avalonia</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">Express</span>
+            <span class="chip">WebSockets</span>
+            <span class="chip">Zod</span>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <header class="card-head">
+            <h3>pf15-mcp — MCP Server + Pipeline RAG</h3>
+            <span class="card-date">2025</span>
+          </header>
+          <p data-i18n="projects.pf.desc">
+            Servidor MCP independiente que expone la API de DIgSILENT PowerFactory 15.1 como tools consumibles por LLMs/agentes.
+          </p>
+          <ul class="bullets">
+            <li data-i18n="projects.pf.b1">MCP server en Node.js + bridge en C++ + scripts en Python.</li>
+            <li data-i18n="projects.pf.b2">Pipeline de ingesta documental: extracción PDF/CHM → parseo HTML → corpus indexado por embeddings.</li>
+            <li data-i18n="projects.pf.b3">OCR con Tesseract.js y procesamiento PDF con pdfjs-dist.</li>
+            <li data-i18n="projects.pf.b4">Persistencia con PostgreSQL y Skills personalizados para flujos específicos.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Node.js</span>
+            <span class="chip">Python</span>
+            <span class="chip">C++</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Tesseract OCR</span>
+            <span class="chip">MCP SDK</span>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <header class="card-head">
+            <h3 data-i18n="projects.help.title">Asistente IA Help Desk @ DINET</h3>
+            <span class="card-date">2025 — <span data-i18n="projects.actualidad2">Actualidad</span></span>
+          </header>
+          <p data-i18n="projects.help.desc">
+            Asistente IA en producción para resolver incidencias de clientes finales, con arquitectura agentica completa: Agente conversacional + MCP Server + RAG + Skills, sobre arquitectura escalable.
+          </p>
+          <div class="chips">
+            <span class="chip">Agentic AI</span>
+            <span class="chip">MCP</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Skills</span>
+            <span class="chip">Java</span>
+            <span class="chip">Azure PostgreSQL</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="num">03</span> <span data-i18n="experience.title">Experiencia laboral</span></h2>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>CSTI Corp <span class="t-role" data-i18n="exp.csti.role">Senior Backend &amp; AI Engineer</span></h3><span class="t-date">10/2025 — <span data-i18n="exp.actualidad">Actualidad</span></span></header>
+              <p data-i18n="exp.csti.desc">Proveedor para proyecto en <strong>DINET</strong> (líder logístico). Microservicios + asistente IA Help Desk con MCP/RAG/Skills. Claude Code diario con MCP propio. Azure DevOps, Azure Database for PostgreSQL.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>Conecta Power <span class="t-role" data-i18n="exp.conecta.role">Desktop Developer</span></h3><span class="t-date">04/2025 — 09/2025</span></header>
+              <p data-i18n="exp.conecta.desc">Aplicación de escritorio con Clean Architecture. Automatización de cómputo de esfuerzo unitario y factor de seguridad. UI FXML + generación de reportes PDF.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>ZOLUXIONES <span class="t-role">Java Microservices Developer</span></h3><span class="t-date">02/2025 — 04/2025</span></header>
+              <p data-i18n="exp.zolux.desc">Proveedor para <strong>CAJA CENCOSUD</strong>. Migración monolito → microservicios reactivos. Java 8 → 17/21. Kubernetes, GitLab CI/CD.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>Ruway Tec S.A.C. <span class="t-role">AWS Developer</span></h3><span class="t-date">12/2024 — 01/2025</span></header>
+              <p data-i18n="exp.ruway2.desc">Contenerización con Docker en EC2/ECS, PostgreSQL en RDS, IAM, Secrets Manager, S3.</p>
+            </div>
+          </div>
+
+          <div class="t-item highlight">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>INDRA <span class="t-role">Java Microservices Developer</span></h3><span class="t-date">07/2024 — 12/2024</span></header>
+              <p data-i18n="exp.indra.desc">Proveedor para <strong>INTERBANK</strong>. Spring Boot reactivo (Reactor), WebClient, JUnit5/Mockito/Mockserver, New Relic, AKS, Azure DevOps, JMeter.</p>
+            </div>
+          </div>
+
+          <div class="t-item highlight">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>NTT DATA <span class="t-role">Java Microservices Developer</span></h3><span class="t-date">07/2023 — 07/2024</span></header>
+              <p data-i18n="exp.ntt.desc">Proveedor para <strong>BCP</strong>. Spring Boot reactivo (RxJava + Reactor), Retrofit, Azure Event Hub, Azure Redis, Hashicorp Vault, SonarQube/Jenkins. <strong>Uso intensivo de GitHub Copilot durante todo el proyecto.</strong> Coverage >90%.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>DIN Automatización <span class="t-role">Java Microservices Developer</span></h3><span class="t-date">02/2023 — 07/2023</span></header>
+              <p data-i18n="exp.din.desc">PoC integración BD → sistemas SCADA. Spring Boot, WebSockets, Docker, Kubernetes.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>Electro Dunas S.A.A. <span class="t-role">Java + .NET Developer</span></h3><span class="t-date">04/2022 — 07/2022</span></header>
+              <p data-i18n="exp.dunas.desc">APIs REST/SOAP con Spring Boot y .NET Core. Oracle PL/SQL, optimización de queries.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <header><h3>ITO Ingenieros / Ruway / ZyTrust / Kiev <span class="t-role">2018 — 2022</span></h3></header>
+              <p data-i18n="exp.early.desc">Desarrollo de software para minería (reconocimiento geométrico 3D), sector farmacéutico, biometría, automatización eléctrica con Python en PowerFactory DIgSILENT (colaboración con SIEMENS, ISA REP).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="num">04</span> <span data-i18n="skills.title">Stack &amp; Skills</span></h2>
+
+        <div class="skills-grid">
+          <div class="skill-group highlight">
+            <h3>AI / Agentic Engineering ⭐</h3>
+            <div class="chips">
+              <span class="chip">MCP (Model Context Protocol)</span>
+              <span class="chip">RAG</span>
+              <span class="chip">Embeddings</span>
+              <span class="chip">AI Agents</span>
+              <span class="chip">Agentic Coding</span>
+              <span class="chip">Skills (Agentic)</span>
+              <span class="chip">Tool Calling</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">LLM Orchestration</span>
+              <span class="chip">LLMOps</span>
+              <span class="chip">Anthropic SDK</span>
+              <span class="chip">Claude Agent SDK</span>
+              <span class="chip">Claude Code SDK</span>
+              <span class="chip">MCP SDK</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>AI Tools &amp; Productivity</h3>
+            <div class="chips">
+              <span class="chip">GitHub Copilot (1+ año BCP)</span>
+              <span class="chip">Claude Code (uso diario)</span>
+              <span class="chip">Custom MCP Workflow</span>
+              <span class="chip">Custom Skills</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Languages &amp; Frameworks</h3>
+            <div class="chips">
+              <span class="chip">Java 8/11/17/21</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Spring WebFlux</span>
+              <span class="chip">RxJava / Reactor</span>
+              <span class="chip">Hibernate (JPA)</span>
+              <span class="chip">MyBatis</span>
+              <span class="chip">Python</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">C# / .NET Core</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Cloud — Microsoft Azure</h3>
+            <p class="skill-note" data-i18n="skills.azure.note"><em>Experiencia consolidada en BCP, INTERBANK y DINET</em></p>
+            <div class="chips">
+              <span class="chip">AKS (day-to-day)</span>
+              <span class="chip">Azure DevOps</span>
+              <span class="chip">Event Hub</span>
+              <span class="chip">API Management</span>
+              <span class="chip">Redis Cache</span>
+              <span class="chip">Database for PostgreSQL</span>
+              <span class="chip">Kubectl avanzado</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.arch.title">Arquitectura &amp; Patrones</h3>
+            <div class="chips">
+              <span class="chip">Hexagonal</span>
+              <span class="chip">Clean Architecture</span>
+              <span class="chip">DDD</span>
+              <span class="chip">CQRS</span>
+              <span class="chip">Event-Driven</span>
+              <span class="chip">Reactive Programming</span>
+              <span class="chip">SOLID / DRY / KISS</span>
+              <span class="chip">Microservices</span>
+              <span class="chip">REST / SOAP</span>
+              <span class="chip">WebSockets / SSE</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.data.title">Bases de Datos</h3>
+            <div class="chips">
+              <span class="chip">Oracle</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">SQL Server</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Cassandra</span>
+              <span class="chip">DynamoDB</span>
+              <span class="chip">Redis</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.sec.title">Seguridad</h3>
+            <div class="chips">
+              <span class="chip">Spring Security</span>
+              <span class="chip">OAuth2</span>
+              <span class="chip">JWT</span>
+              <span class="chip">Keycloak</span>
+              <span class="chip">Hashicorp Vault</span>
+              <span class="chip">JCE / RSA / AES</span>
+              <span class="chip">TLS/SSL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>DevOps &amp; CI/CD</h3>
+            <div class="chips">
+              <span class="chip">Docker</span>
+              <span class="chip">Kubernetes (AKS)</span>
+              <span class="chip">Jenkins</span>
+              <span class="chip">GitLab CI/CD</span>
+              <span class="chip">GitHub Actions</span>
+              <span class="chip">SonarQube</span>
+              <span class="chip">New Relic</span>
+              <span class="chip">Grafana / Loki</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.msg.title">Mensajería &amp; Testing</h3>
+            <div class="chips">
+              <span class="chip">Kafka</span>
+              <span class="chip">RabbitMQ</span>
+              <span class="chip">Azure Event Hub</span>
+              <span class="chip">JUnit 5</span>
+              <span class="chip">Mockito</span>
+              <span class="chip">MockServer / WireMock</span>
+              <span class="chip">JMeter</span>
+              <span class="chip">REST Assured</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="num">05</span> <span data-i18n="edu.title">Educación</span></h2>
+        <div class="edu-grid">
+          <div class="card">
+            <h3>Universidad Nacional de Ingeniería (UNI)</h3>
+            <p data-i18n="edu.uni">Bachiller — Ingeniería Mecánica Eléctrica · 2018</p>
+          </div>
+          <div class="card">
+            <h3>Edutin Academy</h3>
+            <p data-i18n="edu.edutin">Certificación Programador Java (180h) · 2025</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="edu.self.title">Autoformación continua</h3>
+            <p data-i18n="edu.self.desc">Especialización en Backend Java, Arquitectura de Software, Spring Boot, Microservicios, Seguridad, DevOps, Cloud y AI/Agentic Engineering desde 2015.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="num">06</span> <span data-i18n="contact.title">Contacto</span></h2>
+        <p class="contact-lead" data-i18n="contact.lead">¿Quieres conversar sobre un proyecto, oportunidad o consultoría? Escríbeme.</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:ivanrr1991@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">ivanrr1991@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+51972428466">
+            <span class="contact-label" data-i18n="contact.phone">Teléfono</span>
+            <span class="contact-value">+51 972 428 466</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/ivan-rodriguez2022/" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">@ivan-rodriguez2022</span>
+          </a>
+          <a class="contact-card" href="https://github.com/ivanrodriguezromero1" target="_blank" rel="noopener">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@ivanrodriguezromero1</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ivan Alexander Rodriguez Romero — Lima, Perú</p>
+      <p class="footer-note" data-i18n="footer.note">Hecho con código, café y mucho Claude Code ☕</p>
+    </div>
+  </footer>
+
   <script src="js/app.js"></script>
 </body>
 </html>
