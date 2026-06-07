@@ -1,27 +1,26 @@
 // ============================================
-//  IVAN RODRIGUEZ — Portfolio v2
-//  Vanilla JS — no dependencies
+//  IVAN RODRIGUEZ — Portfolio
+//  Direction: "Espresso & Brass"
+//  Vanilla JS — minimal, intentional motion
 // ============================================
 
-// ====== i18n ======
 const i18n = {
   es: {
-    'nav.about': 'Sobre mí',
-    'nav.projects': 'Proyectos AI',
+    'nav.about': 'Perfil',
+    'nav.projects': 'Proyectos IA',
     'nav.experience': 'Experiencia',
     'nav.skills': 'Stack',
     'nav.contact': 'Contacto',
     'hero.eyebrow': 'Disponible para nuevos proyectos',
-    'hero.titlePrefix': 'Soy',
     'hero.sub': 'Construyo plataformas agenticas con LLMs, MCP, RAG y arquitecturas escalables en Azure. Ex-INDRA (Interbank) · Ex-NTT DATA (BCP).',
-    'hero.cta1': 'Hablemos',
+    'hero.cta1': 'Conversemos',
     'hero.scroll': 'desliza',
-    'about.title': 'Sobre mí',
+    'about.title': 'Perfil',
     'about.p1': 'Soy <strong>Senior Backend Developer & AI/Agentic Engineer</strong>, especializado en Java y Python, con foco en arquitectura de microservicios reactivos y construcción de plataformas agenticas con LLMs (MCP, RAG, Skills, Tool-Calling). Bachiller egresado de la <strong>UNI</strong>.',
     'about.p2': 'Amplia experiencia en banca y enterprise en proyectos clave para <strong>BCP</strong>, <strong>INTERBANK</strong>, <strong>Caja Cencosud</strong> y <strong>DINET</strong>, a través de NTT DATA, INDRA, Zoluxiones y CSTI Corp. Programo desde 2015 y aplico metodologías ágiles desde 2020.',
     'about.p3': 'Practicante diario de <strong>Agentic Coding</strong> con Claude Code, Claude Agent SDK, MCP SDK y GitHub Copilot. Construyo asistentes IA con arquitectura hexagonal, RAG basado en embeddings y orquestación de tools.',
     'about.location': 'Ubicación',
-    'about.locationVal': 'Lima, Perú 🇵🇪',
+    'about.locationVal': 'Lima, Perú',
     'about.modality': 'Modalidad',
     'about.modalityVal': 'Remoto / Híbrido',
     'about.lang': 'Idiomas',
@@ -32,8 +31,8 @@ const i18n = {
     'about.stat1': 'años de experiencia',
     'about.stat2': 'empresas / clientes',
     'about.stat3': 'bancos top como cliente',
-    'about.stat4': 'proyectos AI agenticos',
-    'projects.title': 'Proyectos AI / Agentic',
+    'about.stat4': 'proyectos IA agenticos',
+    'projects.title': 'Proyectos IA / Agentic',
     'projects.actualidad': 'Hoy',
     'projects.actualidad2': 'Hoy',
     'projects.volt.desc': 'Plataforma propia de AI Agent end-to-end. MCP Server, RAG con embeddings, tools reales, arquitectura hexagonal y observabilidad. Diseño model-agnostic.',
@@ -62,15 +61,20 @@ const i18n = {
     'exp.dunas.desc': 'APIs REST/SOAP con Spring Boot y .NET Core. Oracle PL/SQL, tuning de queries.',
     'exp.early.desc': 'Software para minería (reconocimiento 3D), farmacéutico, biometría, automatización eléctrica con Python en PowerFactory DIgSILENT (con SIEMENS, ISA REP).',
     'skills.title': 'Stack & Skills',
-    'skills.azure.note': '<em>Consolidado en BCP · INTERBANK · DINET</em>',
-    'skills.arch.title': '🏛️ Arquitectura',
-    'skills.data.title': '🗄️ Bases de Datos',
-    'skills.sec.title': '🔐 Seguridad',
-    'skills.msg.title': '📡 Mensajería & Testing',
+    'skills.ai.title': 'AI / Agentic Engineering',
+    'skills.tools.title': 'Herramientas IA',
+    'skills.lang.title': 'Lenguajes & Frameworks',
+    'skills.cloud.title': 'Microsoft Azure',
+    'skills.azure.note': 'Consolidado en BCP · INTERBANK · DINET',
+    'skills.arch.title': 'Arquitectura',
+    'skills.data.title': 'Bases de Datos',
+    'skills.sec.title': 'Seguridad',
+    'skills.devops.title': 'DevOps',
+    'skills.msg.title': 'Mensajería & Testing',
     'contact.title': 'Contacto',
-    'contact.lead': '¿Proyecto, oportunidad o consultoría? Hablemos.',
+    'contact.lead': '¿Proyecto, oportunidad o consultoría? Conversemos.',
     'contact.phone': 'Teléfono',
-    'footer.note': 'Hecho con código, café y mucho Claude Code ☕',
+    'footer.note': 'Diseñado y desarrollado en Lima, Perú',
   },
   en: {
     'nav.about': 'About',
@@ -79,16 +83,15 @@ const i18n = {
     'nav.skills': 'Stack',
     'nav.contact': 'Contact',
     'hero.eyebrow': 'Available for new projects',
-    'hero.titlePrefix': "I'm a",
     'hero.sub': 'I build agentic platforms with LLMs, MCP, RAG and scalable architectures on Azure. Ex-INDRA (Interbank) · Ex-NTT DATA (BCP).',
     'hero.cta1': "Let's talk",
     'hero.scroll': 'scroll',
     'about.title': 'About me',
     'about.p1': "I'm a <strong>Senior Backend Developer & AI/Agentic Engineer</strong>, specialized in Java and Python, focused on reactive microservices and agentic platforms with LLMs (MCP, RAG, Skills, Tool-Calling). Bachelor from <strong>UNI</strong>.",
-    'about.p2': 'Extensive banking and enterprise experience on key projects for <strong>BCP</strong>, <strong>INTERBANK</strong>, <strong>Caja Cencosud</strong> and <strong>DINET</strong>, through NTT DATA, INDRA, Zoluxiones and CSTI Corp.',
+    'about.p2': 'Extensive banking and enterprise experience on key projects for <strong>BCP</strong>, <strong>INTERBANK</strong>, <strong>Caja Cencosud</strong> and <strong>DINET</strong>, through NTT DATA, INDRA, Zoluxiones and CSTI Corp. Coding since 2015, agile since 2020.',
     'about.p3': 'Daily practitioner of <strong>Agentic Coding</strong> with Claude Code, Claude Agent SDK, MCP SDK and GitHub Copilot. I build AI assistants with hexagonal architecture, embeddings-based RAG and tool orchestration.',
     'about.location': 'Location',
-    'about.locationVal': 'Lima, Peru 🇵🇪',
+    'about.locationVal': 'Lima, Peru',
     'about.modality': 'Modality',
     'about.modalityVal': 'Remote / Hybrid',
     'about.lang': 'Languages',
@@ -129,22 +132,21 @@ const i18n = {
     'exp.dunas.desc': 'REST/SOAP APIs with Spring Boot and .NET Core. Oracle PL/SQL, query tuning.',
     'exp.early.desc': 'Software for mining (3D recognition), pharmaceutical, biometrics, electrical automation with Python on PowerFactory DIgSILENT (with SIEMENS, ISA REP).',
     'skills.title': 'Stack & Skills',
-    'skills.azure.note': '<em>Consolidated at BCP · INTERBANK · DINET</em>',
-    'skills.arch.title': '🏛️ Architecture',
-    'skills.data.title': '🗄️ Databases',
-    'skills.sec.title': '🔐 Security',
-    'skills.msg.title': '📡 Messaging & Testing',
+    'skills.ai.title': 'AI / Agentic Engineering',
+    'skills.tools.title': 'AI Tools',
+    'skills.lang.title': 'Languages & Frameworks',
+    'skills.cloud.title': 'Microsoft Azure',
+    'skills.azure.note': 'Consolidated at BCP · INTERBANK · DINET',
+    'skills.arch.title': 'Architecture',
+    'skills.data.title': 'Databases',
+    'skills.sec.title': 'Security',
+    'skills.devops.title': 'DevOps',
+    'skills.msg.title': 'Messaging & Testing',
     'contact.title': 'Contact',
-    'contact.lead': 'Project, opportunity or consultancy? Let’s talk.',
+    'contact.lead': "Project, opportunity or consultancy? Let's talk.",
     'contact.phone': 'Phone',
-    'footer.note': 'Built with code, coffee and a lot of Claude Code ☕',
+    'footer.note': 'Designed & built in Lima, Peru',
   },
-};
-
-// ====== Rotator roles ======
-const rotatorRoles = {
-  es: ['Senior Backend Engineer', 'AI / Agentic Engineer', 'MCP Builder', 'Java Architect', 'Claude Code Power-User'],
-  en: ['Senior Backend Engineer', 'AI / Agentic Engineer', 'MCP Builder', 'Java Architect', 'Claude Code Power-User'],
 };
 
 // ====== Language ======
@@ -153,60 +155,16 @@ function applyLang(lang, persist) {
   document.documentElement.setAttribute('data-lang', lang);
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.getAttribute('data-i18n');
-    if (i18n[lang] && i18n[lang][key]) {
-      el.innerHTML = i18n[lang][key];
-    }
+    if (i18n[lang] && i18n[lang][key]) el.innerHTML = i18n[lang][key];
   });
   document.querySelectorAll('.lang-opt').forEach((opt) => {
     opt.classList.toggle('active', opt.getAttribute('data-lang-opt') === lang);
   });
-  // Solo se persiste cuando el visitante elige manualmente (persist=true),
-  // nunca en la carga automática — así el default INGLÉS siempre se respeta.
+  // Default is ENGLISH; only persist a manual choice.
   if (persist) { try { localStorage.setItem('site_lang', lang); } catch (e) {} }
 }
 
-// ====== Typewriter ======
-function startRotator() {
-  const el = document.getElementById('rotator');
-  if (!el) return;
-  let langIdx = 0;
-  let textIdx = 0;
-  let charIdx = 0;
-  let deleting = false;
-
-  function getList() {
-    const lang = document.documentElement.getAttribute('data-lang') || 'es';
-    return rotatorRoles[lang] || rotatorRoles.es;
-  }
-
-  function tick() {
-    const list = getList();
-    const current = list[textIdx % list.length];
-    if (!deleting) {
-      charIdx++;
-      el.textContent = current.slice(0, charIdx);
-      if (charIdx === current.length) {
-        deleting = true;
-        setTimeout(tick, 1800);
-        return;
-      }
-      setTimeout(tick, 50 + Math.random() * 60);
-    } else {
-      charIdx--;
-      el.textContent = current.slice(0, charIdx);
-      if (charIdx === 0) {
-        deleting = false;
-        textIdx++;
-        setTimeout(tick, 200);
-        return;
-      }
-      setTimeout(tick, 25);
-    }
-  }
-  tick();
-}
-
-// ====== Counter animation ======
+// ====== Counter animation (stats) ======
 function animateCounters() {
   const counters = document.querySelectorAll('[data-count]');
   const obs = new IntersectionObserver((entries) => {
@@ -214,109 +172,41 @@ function animateCounters() {
       if (e.isIntersecting && !e.target.dataset.done) {
         const target = parseInt(e.target.dataset.count, 10);
         let cur = 0;
-        const step = Math.max(1, Math.floor(target / 30));
+        const step = Math.max(1, Math.floor(target / 24));
         const t = setInterval(() => {
           cur += step;
           if (cur >= target) { cur = target; clearInterval(t); }
           e.target.textContent = cur;
-        }, 35);
+        }, 38);
         e.target.dataset.done = '1';
       }
     });
-  }, { threshold: 0.4 });
+  }, { threshold: 0.5 });
   counters.forEach((c) => obs.observe(c));
 }
 
-// ====== Reveal on scroll ======
+// ====== Reveal on scroll (effect 1 of 2) ======
 function revealOnScroll() {
   const items = document.querySelectorAll('.reveal');
   const obs = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        obs.unobserve(e.target);
-      }
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   items.forEach((i) => obs.observe(i));
-}
-
-// ====== Cursor blob + spotlight ======
-function initCursor() {
-  const blob = document.getElementById('cursorBlob');
-  const spot = document.getElementById('spotlight');
-  if (!blob) return;
-  if (window.matchMedia('(hover: none)').matches) return;
-
-  document.body.classList.add('cursor-on');
-  let targetX = 0, targetY = 0, x = 0, y = 0;
-  document.addEventListener('mousemove', (e) => {
-    targetX = e.clientX;
-    targetY = e.clientY;
-    if (spot) {
-      const hero = document.getElementById('hero');
-      if (hero) {
-        const r = hero.getBoundingClientRect();
-        spot.style.left = (e.clientX - r.left) + 'px';
-        spot.style.top = (e.clientY - r.top) + 'px';
-      }
-    }
-  });
-  function loop() {
-    x += (targetX - x) * 0.12;
-    y += (targetY - y) * 0.12;
-    blob.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-    requestAnimationFrame(loop);
-  }
-  loop();
-}
-
-// ====== Magnetic buttons ======
-function initMagnetic() {
-  document.querySelectorAll('.magnetic').forEach((el) => {
-    el.addEventListener('mousemove', (e) => {
-      const r = el.getBoundingClientRect();
-      const x = e.clientX - r.left - r.width / 2;
-      const y = e.clientY - r.top - r.height / 2;
-      el.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-    });
-    el.addEventListener('mouseleave', () => {
-      el.style.transform = '';
-    });
-  });
-}
-
-// ====== 3D Tilt cards ======
-function initTilt() {
-  if (window.matchMedia('(hover: none)').matches) return;
-  document.querySelectorAll('.tilt').forEach((el) => {
-    el.addEventListener('mousemove', (e) => {
-      const r = el.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width - 0.5;
-      const y = (e.clientY - r.top) / r.height - 0.5;
-      el.style.transform = `perspective(1000px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateZ(2px)`;
-    });
-    el.addEventListener('mouseleave', () => {
-      el.style.transform = '';
-    });
-  });
 }
 
 // ====== Nav scroll state ======
 function initNavScroll() {
   const nav = document.getElementById('nav');
   if (!nav) return;
-  const onScroll = () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
-  };
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 16);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 }
 
 // ====== Init ======
 document.addEventListener('DOMContentLoaded', () => {
-  // Idioma por defecto: INGLÉS (perfil orientado a roles de IA, mercado internacional).
-  // Se respeta la elección manual del visitante si ya tocó el toggle (localStorage).
   const saved = (() => { try { return localStorage.getItem('site_lang'); } catch (e) { return null; } })();
   const initial = (saved === 'es' || saved === 'en') ? saved : 'en';
   applyLang(initial, false);
@@ -331,11 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  startRotator();
   animateCounters();
   revealOnScroll();
-  initCursor();
-  initMagnetic();
-  initTilt();
   initNavScroll();
 });

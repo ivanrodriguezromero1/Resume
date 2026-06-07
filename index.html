@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en" data-theme="dark">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ivan Alexander Rodriguez Romero — Senior Backend & AI/Agentic Engineer. Java, Python, MCP, RAG, LLM, Azure. Experience at BCP, Interbank, DINET.">
   <meta name="author" content="Ivan Alexander Rodriguez Romero">
   <meta name="keywords" content="Ivan Rodriguez, Senior Backend Developer, AI Engineer, Agentic, MCP, RAG, LLM, Python, Java, Azure, Interbank, BCP, DINET">
-  <meta name="theme-color" content="#0a0e1a">
+  <meta name="theme-color" content="#17120F">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
   <meta property="og:title" content="Ivan Rodriguez — Senior Backend & AI/Agentic Engineer">
@@ -14,18 +14,11 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Ivan Rodriguez — Senior Backend & AI/Agentic Engineer</title>
 </head>
 <body>
-
-  <!-- Cursor blob -->
-  <div class="cursor-blob" id="cursorBlob"></div>
-
-  <!-- Background grid -->
-  <div class="bg-grid"></div>
-  <div class="bg-noise"></div>
 
   <!-- TOP NAV -->
   <nav class="nav" id="nav">
@@ -50,15 +43,6 @@
 
   <!-- HERO -->
   <header id="hero" class="hero">
-    <!-- Aurora mesh background -->
-    <div class="aurora">
-      <div class="aurora-blob a1"></div>
-      <div class="aurora-blob a2"></div>
-      <div class="aurora-blob a3"></div>
-    </div>
-    <!-- Spotlight follows cursor -->
-    <div class="spotlight" id="spotlight"></div>
-
     <div class="container hero-inner">
       <div class="badge-status">
         <span class="dot-pulse"></span>
@@ -66,14 +50,12 @@
       </div>
 
       <h1 class="hero-name">
-        <span class="name-line">Ivan Alexander</span>
-        <span class="name-line gradient">Rodriguez Romero</span>
+        <span class="name-line">Ivan</span>
+        <span class="name-line gradient">Rodriguez</span>
       </h1>
 
-      <h2 class="hero-title">
-        <span data-i18n="hero.titlePrefix">I'm a</span>
-        <span class="rotator" id="rotator" aria-live="polite">Senior Backend Engineer</span>
-      </h2>
+      <div class="hero-title">Senior Backend &amp; AI / Agentic Engineer</div>
+      <div class="hero-rule"></div>
 
       <p class="hero-sub" data-i18n="hero.sub">
         I build agentic platforms with LLMs, MCP, RAG and scalable architectures on Azure.
@@ -91,18 +73,11 @@
       </div>
 
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary magnetic">
+        <a href="#contact" class="btn btn-primary">
           <span data-i18n="hero.cta1">Let's talk</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a href="https://github.com/ivanrodriguezromero1" target="_blank" rel="noopener" class="btn btn-ghost magnetic">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.16c-3.2.7-3.88-1.36-3.88-1.36-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.47.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 015.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.58.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.44-2.69 5.42-5.25 5.7.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/ivan-rodriguez2022/" target="_blank" rel="noopener" class="btn btn-ghost magnetic">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-          LinkedIn
-        </a>
+        <a href="https://github.com/ivanrodriguezromero1" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/ivan-rodriguez2022/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
       </div>
 
       <div class="scroll-hint">
@@ -154,7 +129,7 @@
           </div>
           <aside class="about-card">
             <div class="about-meta">
-              <div><span class="meta-label" data-i18n="about.location">Location</span><span class="meta-val" data-i18n="about.locationVal">Lima, Peru 🇵🇪</span></div>
+              <div><span class="meta-label" data-i18n="about.location">Location</span><span class="meta-val" data-i18n="about.locationVal">Lima, Peru</span></div>
               <div><span class="meta-label" data-i18n="about.modality">Modality</span><span class="meta-val" data-i18n="about.modalityVal">Remote / Hybrid</span></div>
               <div><span class="meta-label" data-i18n="about.lang">Languages</span><span class="meta-val" data-i18n="about.langVal">ES native · EN intermediate</span></div>
               <div><span class="meta-label" data-i18n="about.uni">Education</span><span class="meta-val" data-i18n="about.uniVal">UNI Bachelor · 2018</span></div>
@@ -165,7 +140,7 @@
       </div>
     </section>
 
-    <!-- BENTO PROJECTS -->
+    <!-- PROJECTS -->
     <section id="projects" class="section reveal">
       <div class="container">
         <div class="section-head">
@@ -175,9 +150,7 @@
         </div>
 
         <div class="bento">
-          <!-- Volt Sherpa - main card -->
-          <article class="bento-card bento-hero tilt">
-            <div class="bento-bg"></div>
+          <article class="bento-card bento-hero">
             <header class="bento-head">
               <div>
                 <span class="bento-tag">Flagship Project</span>
@@ -200,9 +173,7 @@
             </div>
           </article>
 
-          <!-- pf15-mcp -->
-          <article class="bento-card tilt">
-            <div class="bento-bg"></div>
+          <article class="bento-card">
             <header class="bento-head">
               <div>
                 <span class="bento-tag">MCP Server</span>
@@ -222,9 +193,7 @@
             </div>
           </article>
 
-          <!-- Help Desk DINET -->
-          <article class="bento-card tilt">
-            <div class="bento-bg"></div>
+          <article class="bento-card">
             <header class="bento-head">
               <div>
                 <span class="bento-tag">Production</span>
@@ -238,28 +207,6 @@
               <span class="chip">Skills</span><span class="chip">Java</span><span class="chip">Azure PostgreSQL</span>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- TECH MARQUEE -->
-    <section class="marquee-section reveal">
-      <div class="marquee">
-        <div class="marquee-track">
-          <span>Java</span><span>·</span><span>Python</span><span>·</span><span>Spring Boot</span><span>·</span>
-          <span>WebFlux</span><span>·</span><span>Reactor</span><span>·</span><span>RxJava</span><span>·</span>
-          <span>TypeScript</span><span>·</span><span>Node.js</span><span>·</span><span>MCP</span><span>·</span>
-          <span>RAG</span><span>·</span><span>LLM</span><span>·</span><span>Anthropic SDK</span><span>·</span>
-          <span>Azure</span><span>·</span><span>AKS</span><span>·</span><span>Kubernetes</span><span>·</span>
-          <span>Docker</span><span>·</span><span>PostgreSQL</span><span>·</span><span>Oracle</span><span>·</span>
-          <span>MongoDB</span><span>·</span><span>Redis</span><span>·</span><span>Kafka</span><span>·</span>
-          <span>OAuth2</span><span>·</span><span>JWT</span><span>·</span><span>Keycloak</span><span>·</span>
-          <span>Hexagonal</span><span>·</span><span>DDD</span><span>·</span><span>CQRS</span><span>·</span>
-          <span>Java</span><span>·</span><span>Python</span><span>·</span><span>Spring Boot</span><span>·</span>
-          <span>WebFlux</span><span>·</span><span>Reactor</span><span>·</span><span>RxJava</span><span>·</span>
-          <span>TypeScript</span><span>·</span><span>Node.js</span><span>·</span><span>MCP</span><span>·</span>
-          <span>RAG</span><span>·</span><span>LLM</span><span>·</span><span>Anthropic SDK</span><span>·</span>
-          <span>Azure</span><span>·</span><span>AKS</span><span>·</span><span>Kubernetes</span><span>·</span>
         </div>
       </div>
     </section>
@@ -349,7 +296,7 @@
       </div>
     </section>
 
-    <!-- SKILLS BENTO -->
+    <!-- SKILLS -->
     <section id="skills" class="section reveal">
       <div class="container">
         <div class="section-head">
@@ -359,8 +306,8 @@
         </div>
 
         <div class="skills-bento">
-          <div class="skill-card highlight tilt">
-            <h3>🤖 AI / Agentic Engineering</h3>
+          <div class="skill-card highlight">
+            <h3 data-i18n="skills.ai.title">AI / Agentic Engineering</h3>
             <div class="chips">
               <span class="chip">MCP</span><span class="chip">RAG</span><span class="chip">Embeddings</span>
               <span class="chip">AI Agents</span><span class="chip">Agentic Coding</span>
@@ -372,16 +319,16 @@
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3>⚡ AI Tools</h3>
+          <div class="skill-card">
+            <h3 data-i18n="skills.tools.title">AI Tools</h3>
             <div class="chips">
               <span class="chip">GitHub Copilot</span><span class="chip">Claude Code</span>
               <span class="chip">Custom MCP</span><span class="chip">Custom Skills</span>
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3>☕ Languages &amp; Frameworks</h3>
+          <div class="skill-card">
+            <h3 data-i18n="skills.lang.title">Languages &amp; Frameworks</h3>
             <div class="chips">
               <span class="chip">Java 8-21</span><span class="chip">Spring Boot</span>
               <span class="chip">WebFlux</span><span class="chip">RxJava / Reactor</span>
@@ -391,9 +338,9 @@
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3>☁️ Microsoft Azure</h3>
-            <p class="skill-note" data-i18n="skills.azure.note"><em>Consolidated at BCP · INTERBANK · DINET</em></p>
+          <div class="skill-card">
+            <h3 data-i18n="skills.cloud.title">Microsoft Azure</h3>
+            <p class="skill-note" data-i18n="skills.azure.note">Consolidated at BCP · INTERBANK · DINET</p>
             <div class="chips">
               <span class="chip">AKS (day-to-day)</span><span class="chip">Azure DevOps</span>
               <span class="chip">Event Hub</span><span class="chip">API Management</span>
@@ -402,8 +349,8 @@
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3 data-i18n="skills.arch.title">🏛️ Architecture</h3>
+          <div class="skill-card">
+            <h3 data-i18n="skills.arch.title">Architecture</h3>
             <div class="chips">
               <span class="chip">Hexagonal</span><span class="chip">Clean Architecture</span>
               <span class="chip">DDD</span><span class="chip">CQRS</span>
@@ -412,8 +359,8 @@
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3 data-i18n="skills.data.title">🗄️ Databases</h3>
+          <div class="skill-card">
+            <h3 data-i18n="skills.data.title">Databases</h3>
             <div class="chips">
               <span class="chip">Oracle</span><span class="chip">PostgreSQL</span>
               <span class="chip">MySQL</span><span class="chip">SQL Server</span>
@@ -422,8 +369,8 @@
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3 data-i18n="skills.sec.title">🔐 Security</h3>
+          <div class="skill-card">
+            <h3 data-i18n="skills.sec.title">Security</h3>
             <div class="chips">
               <span class="chip">Spring Security</span><span class="chip">OAuth2</span>
               <span class="chip">JWT</span><span class="chip">Keycloak</span>
@@ -431,8 +378,8 @@
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3>🚀 DevOps</h3>
+          <div class="skill-card">
+            <h3 data-i18n="skills.devops.title">DevOps</h3>
             <div class="chips">
               <span class="chip">Docker</span><span class="chip">Kubernetes</span>
               <span class="chip">Jenkins</span><span class="chip">GitLab CI/CD</span>
@@ -441,8 +388,8 @@
             </div>
           </div>
 
-          <div class="skill-card tilt">
-            <h3 data-i18n="skills.msg.title">📡 Messaging &amp; Testing</h3>
+          <div class="skill-card">
+            <h3 data-i18n="skills.msg.title">Messaging &amp; Testing</h3>
             <div class="chips">
               <span class="chip">Kafka</span><span class="chip">RabbitMQ</span>
               <span class="chip">Event Hub</span><span class="chip">JUnit 5</span>
@@ -464,23 +411,23 @@
         </div>
         <p class="contact-lead" data-i18n="contact.lead">Project, opportunity or consultancy? Let's talk.</p>
         <div class="contact-grid">
-          <a class="contact-card magnetic tilt" href="mailto:ivanrr1991@gmail.com">
-            <div class="contact-icon">✉️</div>
+          <a class="contact-card" href="mailto:ivanrr1991@gmail.com">
+            <span class="contact-icon">→</span>
             <span class="contact-label">Email</span>
             <span class="contact-value">ivanrr1991@gmail.com</span>
           </a>
-          <a class="contact-card magnetic tilt" href="tel:+51972428466">
-            <div class="contact-icon">📱</div>
+          <a class="contact-card" href="tel:+51972428466">
+            <span class="contact-icon">→</span>
             <span class="contact-label" data-i18n="contact.phone">Phone</span>
             <span class="contact-value">+51 972 428 466</span>
           </a>
-          <a class="contact-card magnetic tilt" href="https://www.linkedin.com/in/ivan-rodriguez2022/" target="_blank" rel="noopener">
-            <div class="contact-icon">💼</div>
+          <a class="contact-card" href="https://www.linkedin.com/in/ivan-rodriguez2022/" target="_blank" rel="noopener">
+            <span class="contact-icon">↗</span>
             <span class="contact-label">LinkedIn</span>
             <span class="contact-value">@ivan-rodriguez2022</span>
           </a>
-          <a class="contact-card magnetic tilt" href="https://github.com/ivanrodriguezromero1" target="_blank" rel="noopener">
-            <div class="contact-icon">🐙</div>
+          <a class="contact-card" href="https://github.com/ivanrodriguezromero1" target="_blank" rel="noopener">
+            <span class="contact-icon">↗</span>
             <span class="contact-label">GitHub</span>
             <span class="contact-value">@ivanrodriguezromero1</span>
           </a>
@@ -491,8 +438,8 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Ivan Alexander Rodriguez Romero — Lima, Peru 🇵🇪</p>
-      <p class="footer-note" data-i18n="footer.note">Built with code, coffee and a lot of Claude Code ☕</p>
+      <p>© <span id="year"></span> Ivan Alexander Rodriguez Romero</p>
+      <p data-i18n="footer.note">Designed &amp; built in Lima, Peru</p>
     </div>
   </footer>
 
