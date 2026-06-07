@@ -149,10 +149,37 @@
           <span class="section-line"></span>
         </div>
 
-        <!-- LEVEL 1 — Magazine: real, public/verifiable work -->
+        <!-- LEVEL 1 — Magazine: featured work -->
         <div class="bento">
-          <article class="bento-card bento-hero" data-status="live">
+          <article class="bento-card bento-hero" data-status="product">
             <span class="bento-index">01</span>
+            <header class="bento-head">
+              <div>
+                <span class="bento-tag">AI · Real-time LLM orchestration</span>
+                <h3>Liga Arena</h3>
+              </div>
+              <span class="status-pill product"><span class="sp-dot"></span>LIVE DEMO</span>
+            </header>
+            <p class="bento-desc" data-i18n="proj.liga.desc">A real-time dual AI sportscaster for a live Kick game: a fault-tolerant multi-model LLM cascade generates contextual play-by-play, with Spanish neural TTS and speculative pre-synthesis for ~0ms perceived latency.</p>
+            <ul class="bento-bullets">
+              <li data-i18n="proj.liga.b1"><strong>Multi-model LLM cascade</strong> (Groq Llama 3.3 70B → Cerebras Qwen/Llama → Gemini) with kind-aware routing per event — no single point of failure</li>
+              <li data-i18n="proj.liga.b2"><strong>Production reliability decorators</strong>: Circuit Breaker, token-bucket Rate Limiter, Timeout, header Quota Tracking and CAG cache — composed via DI</li>
+              <li data-i18n="proj.liga.b3"><strong>Speculative inference</strong>: pre-generates winner candidates (LLM + TTS) ~15s before climax → ~0ms perceived latency</li>
+              <li data-i18n="proj.liga.b4"><strong>Semantic anti-repetition</strong> with local embeddings (transformers.js MiniLM) + pgvector cosine — no external similarity API</li>
+              <li data-i18n="proj.liga.b5"><strong>Defensive prompt engineering</strong>: 7-bucket output validator (anti-copyright, anti-hallucination) + prompt-injection guards</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Groq · Llama 3.3 70B</span><span class="chip">Cerebras · Qwen 235B</span><span class="chip">Gemini</span>
+              <span class="chip">XTTS v2 TTS</span><span class="chip">transformers.js</span><span class="chip">pgvector</span>
+              <span class="chip">Circuit Breaker</span><span class="chip">Speculative</span><span class="chip">TypeScript</span>
+            </div>
+            <div class="card-links">
+              <span class="link-muted" data-i18n="cta.demoRequest">Live demo on request</span>
+            </div>
+          </article>
+
+          <article class="bento-card" data-status="live">
+            <span class="bento-index sm">02</span>
             <header class="bento-head">
               <div>
                 <span class="bento-tag">Backend · Java</span>
@@ -161,36 +188,12 @@
               <span class="status-pill live"><span class="sp-dot"></span>OPEN SOURCE</span>
             </header>
             <p class="bento-desc" data-i18n="proj.imp.desc">Spring Boot 3 order-import service with per-run idempotency (zero duplicates), business-rule validation and batch PostgreSQL inserts. Production instincts recruiters scan for.</p>
-            <ul class="bento-bullets">
-              <li data-i18n="proj.imp.b1"><strong>Idempotency</strong> per run — safe re-imports, no duplicates</li>
-              <li data-i18n="proj.imp.b2"><strong>Batch inserts</strong> into PostgreSQL + business-rule validation</li>
-              <li data-i18n="proj.imp.b3"><strong>JWT</strong> auth, <strong>OpenAPI</strong> contract, Docker Compose</li>
-              <li data-i18n="proj.imp.b4"><strong>JSON logs</strong> with X-Correlation-Id for traceability</li>
-            </ul>
             <div class="chips">
               <span class="chip">Java 17</span><span class="chip">Spring Boot 3</span><span class="chip">PostgreSQL</span>
               <span class="chip">JWT</span><span class="chip">OpenAPI</span><span class="chip">Docker</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ivanrodriguezromero1/importador-pedidos" target="_blank" rel="noopener" data-i18n="cta.repo">Repo ↗</a>
-            </div>
-          </article>
-
-          <article class="bento-card" data-status="live">
-            <span class="bento-index sm">02</span>
-            <header class="bento-head">
-              <div>
-                <span class="bento-tag">Backend · Microservices</span>
-                <h3>banking-system</h3>
-              </div>
-              <span class="status-pill live"><span class="sp-dot"></span>OPEN SOURCE</span>
-            </header>
-            <p class="bento-desc" data-i18n="proj.bank.desc">Microservices for customer & financial-product data — reinforces the top-tier banking story (BCP, Interbank, Caja Cencosud) with code a recruiter can open.</p>
-            <div class="chips">
-              <span class="chip">Java</span><span class="chip">Microservices</span><span class="chip">REST</span><span class="chip">Spring</span>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/ivanrodriguezromero1/banking-system" target="_blank" rel="noopener" data-i18n="cta.repo">Repo ↗</a>
             </div>
           </article>
 
@@ -219,14 +222,14 @@
 
         <!-- LEVEL 2 — Index: live demos + open-source roadmap (reserved space, fill as built) -->
         <div class="work-index">
-          <div class="work-row" data-status="product">
+          <a class="work-row" data-status="live" href="https://github.com/ivanrodriguezromero1/banking-system" target="_blank" rel="noopener">
             <span class="wr-index">04</span>
             <div class="wr-main">
-              <span class="wr-title">Liga Arena</span>
-              <span class="wr-meta">Interactive Kick stream game · 12 teams · real-time 3D arena · TypeScript</span>
+              <span class="wr-title">banking-system</span>
+              <span class="wr-meta">Customer &amp; financial-product microservices · Java · Spring · REST</span>
             </div>
-            <span class="status-pill product"><span class="sp-dot"></span>LIVE DEMO</span>
-          </div>
+            <span class="status-pill live"><span class="sp-dot"></span>OPEN SOURCE ↗</span>
+          </a>
 
           <div class="work-row" data-status="wip">
             <span class="wr-index">05</span>
