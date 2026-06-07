@@ -29,7 +29,7 @@
       </a>
       <div class="nav-links">
         <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#projects" data-i18n="nav.projects">AI Projects</a>
+        <a href="#projects" data-i18n="nav.projects">Work</a>
         <a href="#experience" data-i18n="nav.experience">Experience</a>
         <a href="#skills" data-i18n="nav.skills">Stack</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -145,69 +145,145 @@
       <div class="container">
         <div class="section-head">
           <span class="section-num">02</span>
-          <h2 class="section-title" data-i18n="projects.title">AI / Agentic Projects</h2>
+          <h2 class="section-title" data-i18n="projects.title">Selected Work</h2>
           <span class="section-line"></span>
         </div>
 
+        <!-- LEVEL 1 — Magazine: real, public/verifiable work -->
         <div class="bento">
-          <article class="bento-card bento-hero">
+          <article class="bento-card bento-hero" data-status="live">
+            <span class="bento-index">01</span>
             <header class="bento-head">
               <div>
-                <span class="bento-tag">Flagship Project</span>
-                <h3>Volt Sherpa AI <span class="badge-v">v3.0.0</span></h3>
+                <span class="bento-tag">Backend · Java</span>
+                <h3>importador-pedidos</h3>
               </div>
-              <span class="bento-date">Nov 2025 — <span data-i18n="projects.actualidad">Present</span></span>
+              <span class="status-pill live"><span class="sp-dot"></span>OPEN SOURCE</span>
             </header>
-            <p class="bento-desc" data-i18n="projects.volt.desc">My own end-to-end AI Agent platform. MCP Server, RAG with embeddings, real tools, hexagonal architecture and observability. Model-agnostic design.</p>
+            <p class="bento-desc" data-i18n="proj.imp.desc">Spring Boot 3 order-import service with per-run idempotency (zero duplicates), business-rule validation and batch PostgreSQL inserts. Production instincts recruiters scan for.</p>
             <ul class="bento-bullets">
-              <li data-i18n="projects.volt.b1"><strong>Custom MCP Server</strong> with tools: PowerFactory, Excel, Word, KB VAD</li>
-              <li data-i18n="projects.volt.b2"><strong>RAG</strong> with <code>@xenova/transformers</code> (embeddings)</li>
-              <li data-i18n="projects.volt.b3"><strong>Claude Agent SDK</strong> + <strong>MCP SDK</strong> + <strong>Anthropic SDK</strong></li>
-              <li data-i18n="projects.volt.b4"><strong>Hexagonal</strong> + Strategy, Circuit Breaker, Adapter, State, Observer</li>
-              <li data-i18n="projects.volt.b5"><strong>Observability</strong>: Grafana + Loki, deterministic heartbeats</li>
+              <li data-i18n="proj.imp.b1"><strong>Idempotency</strong> per run — safe re-imports, no duplicates</li>
+              <li data-i18n="proj.imp.b2"><strong>Batch inserts</strong> into PostgreSQL + business-rule validation</li>
+              <li data-i18n="proj.imp.b3"><strong>JWT</strong> auth, <strong>OpenAPI</strong> contract, Docker Compose</li>
+              <li data-i18n="proj.imp.b4"><strong>JSON logs</strong> with X-Correlation-Id for traceability</li>
             </ul>
             <div class="chips">
-              <span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Python</span>
-              <span class="chip">C# / Avalonia</span><span class="chip">SQLite</span><span class="chip">Express</span>
-              <span class="chip">WebSockets</span><span class="chip">Zod</span>
+              <span class="chip">Java 17</span><span class="chip">Spring Boot 3</span><span class="chip">PostgreSQL</span>
+              <span class="chip">JWT</span><span class="chip">OpenAPI</span><span class="chip">Docker</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ivanrodriguezromero1/importador-pedidos" target="_blank" rel="noopener" data-i18n="cta.repo">Repo ↗</a>
             </div>
           </article>
 
-          <article class="bento-card">
+          <article class="bento-card" data-status="live">
+            <span class="bento-index sm">02</span>
             <header class="bento-head">
               <div>
-                <span class="bento-tag">MCP Server</span>
-                <h3>pf15-mcp</h3>
+                <span class="bento-tag">Backend · Microservices</span>
+                <h3>banking-system</h3>
               </div>
-              <span class="bento-date">2025</span>
+              <span class="status-pill live"><span class="sp-dot"></span>OPEN SOURCE</span>
             </header>
-            <p class="bento-desc" data-i18n="projects.pf.desc">Independent MCP server exposing DIgSILENT PowerFactory 15.1 as tools for LLMs.</p>
-            <ul class="bento-bullets">
-              <li data-i18n="projects.pf.b1">Node.js + C++ bridge + Python</li>
-              <li data-i18n="projects.pf.b2">PDF/CHM ingestion → embeddings → indexed corpus</li>
-              <li data-i18n="projects.pf.b3">OCR (Tesseract.js) + PostgreSQL + Skills</li>
-            </ul>
+            <p class="bento-desc" data-i18n="proj.bank.desc">Microservices for customer & financial-product data — reinforces the top-tier banking story (BCP, Interbank, Caja Cencosud) with code a recruiter can open.</p>
             <div class="chips">
-              <span class="chip">Node</span><span class="chip">Python</span><span class="chip">C++</span>
-              <span class="chip">PostgreSQL</span><span class="chip">MCP SDK</span>
+              <span class="chip">Java</span><span class="chip">Microservices</span><span class="chip">REST</span><span class="chip">Spring</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ivanrodriguezromero1/banking-system" target="_blank" rel="noopener" data-i18n="cta.repo">Repo ↗</a>
             </div>
           </article>
 
-          <article class="bento-card">
+          <article class="bento-card" data-status="product">
+            <span class="bento-index sm">03</span>
             <header class="bento-head">
               <div>
-                <span class="bento-tag">Production</span>
-                <h3 data-i18n="projects.help.title">AI Help Desk Assistant @ DINET</h3>
+                <span class="bento-tag">Full-stack · SaaS</span>
+                <h3>mermaid-to-image</h3>
               </div>
-              <span class="bento-date">2025 — <span data-i18n="projects.actualidad2">Present</span></span>
+              <span class="status-pill product"><span class="sp-dot"></span>PRODUCT</span>
             </header>
-            <p class="bento-desc" data-i18n="projects.help.desc">Production AI assistant resolving end-client incidents. Agent + MCP + RAG + Skills on scalable architecture.</p>
+            <p class="bento-desc" data-i18n="proj.mermaid.desc">Freemium product turning Mermaid diagrams into high-quality PNG/SVG/PDF, with deterministic paywall, idempotent MercadoPago + PayPal webhooks and 7-language i18n.</p>
             <div class="chips">
-              <span class="chip">Agentic AI</span><span class="chip">MCP</span><span class="chip">RAG</span>
-              <span class="chip">Skills</span><span class="chip">Java</span><span class="chip">Azure PostgreSQL</span>
+              <span class="chip">TypeScript</span><span class="chip">MercadoPago</span><span class="chip">PayPal</span>
+              <span class="chip">i18n ×7</span><span class="chip">Sentry</span>
+            </div>
+            <div class="card-links">
+              <span class="link-muted" data-i18n="cta.demoRequest">Live demo on request</span>
             </div>
           </article>
         </div>
+
+        <!-- divider -->
+        <div class="index-divider"><span data-i18n="index.label">Index — selected &amp; in progress</span></div>
+
+        <!-- LEVEL 2 — Index: open-source roadmap (reserved space, fill as built) -->
+        <div class="work-index">
+          <div class="work-row" data-status="wip">
+            <span class="wr-index">04</span>
+            <div class="wr-main">
+              <span class="wr-title">AI Assistant Suite — Mining &amp; Energy</span>
+              <span class="wr-meta">Open-source · MCP · RAG · Python</span>
+            </div>
+            <span class="status-pill wip"><span class="sp-dot pulse"></span>IN PROGRESS</span>
+          </div>
+
+          <div class="work-row" data-status="planned">
+            <span class="wr-index">05</span>
+            <div class="wr-main">
+              <span class="wr-title">RAG Engine</span>
+              <span class="wr-meta">Hybrid search (dense + BM25 + RRF) · re-ranking · FastAPI · pgvector</span>
+            </div>
+            <span class="status-pill planned" data-i18n="status.planned">PLANNED</span>
+          </div>
+
+          <div class="work-row" data-status="planned">
+            <span class="wr-index">06</span>
+            <div class="wr-main">
+              <span class="wr-title">Tool-Calling Agent</span>
+              <span class="wr-meta">Multi-step · retry/recovery · memory · sandboxed tools</span>
+            </div>
+            <span class="status-pill planned" data-i18n="status.planned">PLANNED</span>
+          </div>
+
+          <div class="work-row" data-status="planned">
+            <span class="wr-index">07</span>
+            <div class="wr-main">
+              <span class="wr-title">Production MCP Server</span>
+              <span class="wr-meta">OAuth 2.1 · rate-limiting · stdio + HTTP/SSE · MCP SDK</span>
+            </div>
+            <span class="status-pill planned" data-i18n="status.planned">PLANNED</span>
+          </div>
+
+          <div class="work-row" data-status="planned">
+            <span class="wr-index">08</span>
+            <div class="wr-main">
+              <span class="wr-title">LLM Eval + Observability Kit</span>
+              <span class="wr-meta">DeepEval/Promptfoo · hallucination tracking · CI · traces dashboard</span>
+            </div>
+            <span class="status-pill planned" data-i18n="status.planned">PLANNED</span>
+          </div>
+
+          <div class="work-row" data-status="planned">
+            <span class="wr-index">09</span>
+            <div class="wr-main">
+              <span class="wr-title" data-i18n="idx.oss.title">Open-source contribution</span>
+              <span class="wr-meta">Merged PR to the AI stack (LangChain / Phoenix / MCP servers)</span>
+            </div>
+            <span class="status-pill planned" data-i18n="status.planned">PLANNED</span>
+          </div>
+
+          <div class="work-row" data-status="internal">
+            <span class="wr-index">10</span>
+            <div class="wr-main">
+              <span class="wr-title">Hexagonal SaaS Starter</span>
+              <span class="wr-meta" data-i18n="idx.toolkit.meta">Internal framework · Next.js + Express hexagonal + Supabase + payments</span>
+            </div>
+            <span class="status-pill internal" data-i18n="status.internal">INTERNAL</span>
+          </div>
+        </div>
+
+        <a class="index-archive" href="https://github.com/ivanrodriguezromero1" target="_blank" rel="noopener" data-i18n="index.archive">Full archive on GitHub ↗</a>
       </div>
     </section>
 
