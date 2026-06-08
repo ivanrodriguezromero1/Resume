@@ -40,6 +40,9 @@ a { color: inherit; text-decoration: none; }
 
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
 
+/* offset for the sticky nav when navigating to a section */
+#hero, #about, #projects, #experience, #skills, #contact { scroll-margin-top: 84px; }
+
 /* serif display helper */
 .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
 

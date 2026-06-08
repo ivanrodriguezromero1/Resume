@@ -254,6 +254,22 @@ function initSidebar() {
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 }
 
+// ====== Smooth in-page navigation WITHOUT leaving #hash in the URL ======
+function initSmoothAnchors() {
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.getElementById(href.slice(1));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // strip the hash so the URL stays clean (…/Resume/ instead of …/Resume/#about)
+      try { history.replaceState(null, '', location.pathname + location.search); } catch (err) {}
+    });
+  });
+}
+
 // ====== Init ======
 document.addEventListener('DOMContentLoaded', () => {
   const saved = (() => { try { return localStorage.getItem('site_lang'); } catch (e) { return null; } })();
@@ -274,4 +290,5 @@ document.addEventListener('DOMContentLoaded', () => {
   revealOnScroll();
   initNavScroll();
   initSidebar();
+  initSmoothAnchors();
 });
