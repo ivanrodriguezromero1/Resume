@@ -187,14 +187,14 @@
             </header>
             <p class="bento-desc" data-i18n="proj.liga.desc">A real-time dual AI sportscaster for a live Kick game: a fault-tolerant multi-model LLM cascade generates contextual play-by-play, with Spanish neural TTS and speculative pre-synthesis for ~0ms perceived latency.</p>
             <ul class="bento-bullets">
-              <li data-i18n="proj.liga.b1"><strong>Multi-model LLM cascade</strong> (Groq Llama 3.3 70B → Cerebras Qwen/Llama → Gemini) with kind-aware routing per event — no single point of failure</li>
+              <li data-i18n="proj.liga.b1"><strong>Multi-model LLM cascade</strong> (Groq Llama 3.3 70B → Gemini) with kind-aware routing per event — no single point of failure</li>
               <li data-i18n="proj.liga.b2"><strong>Production reliability decorators</strong>: Circuit Breaker, token-bucket Rate Limiter, Timeout, header Quota Tracking and CAG cache — composed via DI</li>
               <li data-i18n="proj.liga.b3"><strong>Speculative inference</strong>: pre-generates winner candidates (LLM + TTS) ~15s before climax → ~0ms perceived latency</li>
               <li data-i18n="proj.liga.b4"><strong>Semantic anti-repetition</strong> with local embeddings (transformers.js MiniLM) + pgvector cosine — no external similarity API</li>
               <li data-i18n="proj.liga.b5"><strong>Defensive prompt engineering</strong>: 7-bucket output validator (anti-copyright, anti-hallucination) + prompt-injection guards</li>
             </ul>
             <div class="chips">
-              <span class="chip">Groq · Llama 3.3 70B</span><span class="chip">Cerebras · Qwen 235B</span><span class="chip">Gemini</span>
+              <span class="chip">Groq · Llama 3.3 70B</span><span class="chip">Gemini</span>
               <span class="chip">XTTS v2 TTS</span><span class="chip">transformers.js</span><span class="chip">pgvector</span>
               <span class="chip">Circuit Breaker</span><span class="chip">Speculative</span><span class="chip">TypeScript</span>
             </div>
